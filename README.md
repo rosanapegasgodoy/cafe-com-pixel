@@ -27,6 +27,14 @@ Um classificador de nível de torra (verde, clara, média, escura) a partir de f
 - Aumento de dados com giros e espelhamentos, **sem alterar brilho/contraste**, para não confundir os níveis de torra.
 - Limitação: fotos com fundo branco, luz controlada e um único tipo de café. O resultado vale para essa base, não para fotos em condições reais.
 
+## Semana 2 — Precisava treinar? fast.ai × Teachable Machine × Claude
+
+As três abordagens classificam **as mesmas 40 fotos** do teste (10 por torra), comparadas em acurácia, tempo por imagem, custo por 1.000 imagens e esforço. O Claude não recebe nenhum treino: só a foto e uma instrução em texto, com a resposta restrita aos 4 rótulos.
+
+📓 Notebook: [`semana2_comparacao_tm_claude.ipynb`](semana2_comparacao_tm_claude.ipynb) — resultados em breve.
+
+Para rodar a parte do Teachable Machine, exporte o modelo em *TensorFlow Lite → Ponto flutuante* (instruções na seção 3 do notebook).
+
 ### Como rodar
 
 O notebook foi feito para rodar no **Google Colab com GPU T4**:
