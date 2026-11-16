@@ -5,3 +5,6 @@ __pycache__/
 .env
 .vscode/
 models/
+dados/
+converted_tflite*.zip
+teachable_machine/
